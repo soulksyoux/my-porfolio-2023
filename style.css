@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+li {
+    list-style: none;
+}
+
+header {
+    height: 80px;
+    background: rgb(40,40,40);
+    background: linear-gradient(90deg, rgb(20, 20, 20, 0.98) 0%, rgba(25, 25, 25, 0.98) 100%);
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-size: 1.3rem;
+    z-index: 10;
+}
+
+header .logo {
+    font-size: 2.5rem;
+    font-family: 'Poiret One', cursive;
+
+}
+
+header nav {
+    font-family: 'Arsenal', sans-serif;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.banner {
+    margin-top: 80px;
+    height: 600px;
+    /*
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    */
+    
+    /*
+    background-image: url("./cool-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+
+    background: url("./noisy3.png");
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 40px;
+}
+
+.banner .quote {
+    color: rgb(40,40,40);
+    font-size: 1.8em;
+    letter-spacing: .4rem;
+    font-family: 'Poiret One', cursive;
+    text-shadow: -2px 2px 0 gold,
+                  2px 2px 0 gold,
+                 2px -2px 0 gold,
+                -2px -2px 0 gold;
+}
+
+.btn-resume {
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid gold;
+    color: gold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-family: 'Arsenal', sans-serif;
+    transition: 0.1s ease-out;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.btn-resume:hover {
+    background-color: gold;
+    color: rgb(20,20,20);
+}
+
+main {
+    background-color: rgb(20,20,20);
+    color: aliceblue;
+    font-family: 'Arsenal', sans-serif;
+    text-align: center;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+main .about-me {
+    border: 1px solid red;
+    padding: 40px 10%;
+}
+
+.skills {
+    border: 1px solid red;
+    padding: 40px 10%;
+}
+
+.projects {
+    border: 1px solid red;
+    padding: 40px 10%;
+    background: url("./noisy3.png");
+}
+
+
