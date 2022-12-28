@@ -23,6 +23,10 @@ a {
     color: aliceblue;
 }
 
+a:hover {
+    color: rgb(238, 209, 123);;
+}
+
 header {
     height: 80px;
     background: rgb(40,40,40);
@@ -194,7 +198,7 @@ main .projects .projects-items {
 }
 
 main .projects .project-card {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.9);
     color: rgb(30,30,30,0.9);
     border: 5px solid gold;
     height: 300px;
