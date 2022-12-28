@@ -6,17 +6,27 @@
 
 html {
     font-size: 16px;
+    scroll-behavior:smooth;
 }
 
+body {
+    background-color: rgb(30,30,30);
+}
 
 li {
     list-style: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
 header {
     height: 80px;
     background: rgb(40,40,40);
-    background: linear-gradient(90deg, rgb(20, 20, 20, 0.98) 0%, rgba(25, 25, 25, 0.98) 100%);
+    background: linear-gradient(90deg, rgb(20, 20, 20, 0.98) 0%, rgba(28, 28, 28, 0.98) 100%);
     color: aliceblue;
     display: flex;
     justify-content: space-between;
@@ -45,8 +55,8 @@ header nav ul {
 }
 
 .banner {
-    margin-top: 80px;
-    height: 600px;
+    margin-top: 120px;
+    height: 700px;
     /*
     background:
     radial-gradient(black 15%, transparent 16%) 0 0,
@@ -63,12 +73,26 @@ header nav ul {
     background-size: cover;
     */
 
+    background: rgb(30,30,30);
     background: url("./noisy3.png");
 
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 75px;
+    
+
+
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .banner .quote {
@@ -94,6 +118,7 @@ header nav ul {
     transition: 0.1s ease-out;
     font-weight: 700;
     letter-spacing: 0.1rem;
+    cursor: pointer;
 }
 
 .btn-resume:hover {
@@ -102,7 +127,7 @@ header nav ul {
 }
 
 main {
-    background-color: rgb(20,20,20);
+    background-color: rgb(30,30,30);
     color: aliceblue;
     font-family: 'Arsenal', sans-serif;
     text-align: center;
@@ -113,19 +138,141 @@ main h2 {
 }
 
 main .about-me {
-    border: 1px solid red;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 40px;
+}
+
+main .about-me h2 {
+    font-family: 'Poiret One', cursive;
+    text-shadow: -2px 2px 0 gold,
+                  2px 2px 0 gold,
+                 2px -2px 0 gold,
+                -2px -2px 0 gold;
+    color: black;
+    font-size: 1.6rem;
+}
+
+main .about-me p {
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+    line-height: 35px;
+}
+
+
+
+main .projects {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 40px;;
+    margin-bottom: 40px;
+}
+
+main .projects h2 {
+    font-family: 'Poiret One', cursive;
+    text-shadow: -2px 2px 0 gold,
+                  2px 2px 0 gold,
+                 2px -2px 0 gold,
+                -2px -2px 0 gold;
+    color: black;
+    font-size: 1.6rem;
+}
+
+main .projects p {
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+main .projects .projects-items {
+    display: flex;
+    justify-content: space-evenly;
+    height: 320px;
+
+
+}
+
+main .projects .project-card {
+    background-color: rgba(255,255,255,0.8);
+    color: rgb(30,30,30,0.9);
+    border: 5px solid gold;
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    
+
+}
+
+main .projects .project-card:hover {
+    background-color: rgb(238, 209, 123);
+    color: rgb(20, 20, 20);
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-right: -3px;
+
+}
+
+.hidden {
+    display: none !important;
+}
+
+main .projects .card {
+    padding: 20px 20px;
+
+    height: 100%;
+    width: 100%;
+
+    letter-spacing: 0.5px;
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 3px 3px 2px rgb(238, 209, 123);
+}
+
+main .projects .card1 {
+    font-size: 1.5rem;
+}
+
+main .projects .card2 {
+    font-size: 1rem;
+    background-color: slateblue;
+    color: white;
+}
+
+main .projects .card2:hover {
+    color: white;
+}
+
+main .skills {
     padding: 40px 10%;
 }
 
-.skills {
-    border: 1px solid red;
-    padding: 40px 10%;
+main .skills h2 {
+    font-family: 'Poiret One', cursive;
+    text-shadow: -2px 2px 0 gold,
+                  2px 2px 0 gold,
+                 2px -2px 0 gold,
+                -2px -2px 0 gold;
+    color: black;
+    font-size: 1.6rem;
 }
 
-.projects {
-    border: 1px solid red;
-    padding: 40px 10%;
-    background: url("./noisy3.png");
+main .skills p {
+    font-size: 1.1rem;
+    letter-spacing: 0.3px;
+    line-height: 35px;
 }
+
+.separator {
+    width: 50%;
+    height: 10px;
+    border-bottom: 0.5px solid hsl(51, 100%, 50%, 0.2);
+    margin: 0 auto;
+}
+
 
 
