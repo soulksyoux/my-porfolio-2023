@@ -19,4 +19,17 @@ cards.forEach(card => {
     turnCard(card.id);
 });
 
+const btnToggleSkills = document.querySelector(".btn-more-skills");
+btnToggleSkills.addEventListener("click", function(event){
+    document.querySelector(".skills-content").classList.toggle("hidden");
+    document.querySelector(".skills-other-content").classList.toggle("hidden");
+    document.querySelector("#skills-title").classList.toggle("hidden");
+    document.querySelector("#skills-title-more").classList.toggle("hidden");
+    if(btnToggleSkills.innerHTML == "More Skills") {
+        btnToggleSkills.innerHTML = "Main Skills";
+    }else{
+        btnToggleSkills.innerHTML = "More Skills";
+    }
+})
+
 

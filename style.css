@@ -11,6 +11,7 @@ html {
 
 body {
     background-color: rgb(30,30,30);
+    font-family: 'Arsenal', sans-serif;
 }
 
 li {
@@ -110,9 +111,9 @@ header nav ul {
                 -2px -2px 0 gold;
 }
 
-.btn-resume {
+.btn-resume, .btn-more-skills {
     padding: 20px 40px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     border: 2px solid gold;
     color: gold;
     font-size: 1.2rem;
@@ -125,9 +126,16 @@ header nav ul {
     cursor: pointer;
 }
 
-.btn-resume:hover {
-    background-color: gold;
+.btn-resume:hover, .btn-more-skills:hover {
+    background-color: rgb(255, 223, 40);
     color: rgb(20,20,20);
+    opacity: 0.8;
+    transition: 0.2s ease-in;
+}
+
+.btn-small {
+    padding: 12px 26px;
+    font-size: 1.1rem;
 }
 
 main {
@@ -204,6 +212,7 @@ main .projects .project-card {
     height: 300px;
     width: 400px;
     border-radius: 10px;
+    position: relative;
     
 
 }
@@ -223,10 +232,8 @@ main .projects .project-card:hover {
 
 main .projects .card {
     padding: 20px 20px;
-
     height: 100%;
     width: 100%;
-
     letter-spacing: 0.5px;
     line-height: 35px;
     display: flex;
@@ -245,6 +252,8 @@ main .projects .card2 {
     font-size: 1rem;
     background-color: slateblue;
     color: white;
+    position: absolute;
+    top: 0;
 }
 
 main .projects .card2:hover {
@@ -253,6 +262,8 @@ main .projects .card2:hover {
 
 main .skills {
     padding: 40px 10%;
+    position: relative;
+    height: 240px;
 }
 
 main .skills h2 {
@@ -271,12 +282,81 @@ main .skills p {
     line-height: 35px;
 }
 
+main .skills-content, main .skills-other-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 150px;
+}
+
+main .skills h3 { 
+    margin-bottom: 10px;
+}
+
+main .skills img {
+    width: 100px;
+}
+
+main .skill {
+    min-height: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main .skill-bar {
+    margin-top: 10px;
+    width: 100%;
+    height: 10px;
+    border: 1px solid gold;
+    border-radius: 20px;
+}
+
+main .skill-bar .skill-rate-100 {
+    background-color: gold;
+    opacity: 0.50;
+    height: 100%;
+    width: 100%;
+}
+
+main .skill-bar .skill-rate-75 {
+    background-color: gold;
+    opacity: 0.50;
+    height: 100%;
+    width: 75%;
+}
+
+main .skill-bar .skill-rate-50 {
+    background-color: gold;
+    opacity: 0.50;
+    height: 100%;
+    width: 50%;
+}
+
+main .skill-bar .skill-rate-25 {
+    background-color: gold;
+    opacity: 0.50;
+    height: 100%;
+    width: 25%;
+}
+
+
 .separator {
     width: 50%;
     height: 10px;
     border-bottom: 0.5px solid hsl(51, 100%, 50%, 0.2);
     margin: 0 auto;
 }
+
+.skills-other-content, .skills-content {
+    position: absolute;
+    top: 0;
+    height: 150px;
+    width: 80%;
+    margin-top: 90px;
+}
+
 
 
 
