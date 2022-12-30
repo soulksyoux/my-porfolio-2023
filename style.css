@@ -330,6 +330,7 @@ main .skills h3 {
 
 main .skills img {
     width: 100px;
+    max-height: 100px;
 }
 
 main .skill {
