@@ -56,12 +56,13 @@ header nav {
 
 header nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
 .banner {
     margin-top: 120px;
-    height: 700px;
+    /*height: 700px;*/
     /*
     background:
     radial-gradient(black 15%, transparent 16%) 0 0,
@@ -82,6 +83,7 @@ header nav ul {
     background: url("./noisy3.png");
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     padding: 0 40px;
@@ -178,6 +180,7 @@ main .projects {
     margin-right: 10%;
     margin-top: 40px;;
     margin-bottom: 40px;
+    height: auto;
 }
 
 main .projects h2 {
@@ -199,16 +202,17 @@ main .projects p {
 
 main .projects .projects-items {
     display: flex;
-    justify-content: space-evenly;
-    height: 320px;
-
-
+    justify-content: center;
+    gap: 30px;
+    height: 100%;
+    flex-wrap: wrap;
 }
 
 main .projects .project-card {
-    background-color: slateblue;
+    background: #6a5bcd;
+    background: linear-gradient(83deg, rgba(106,91,205,1) 0%, rgba(115,101,203,1) 100%);
     color: white;
-    height: 300px;
+    height: 320px;
     width: 400px;
     border-radius: 10px;
     position: relative;
@@ -234,40 +238,67 @@ main .projects .card {
     width: 100%;
     letter-spacing: 0.5px;
     line-height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     font-weight: 700;
-
 }
 
 main .projects .card1 {
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+main .projects .card1 h3 {
+    font-size: 1.4rem;
+    align-self: flex-end;
+    width: 100%;
+    
+}
+
+main .projects .card1 .project-footer {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgb(252, 243, 127);
+    padding: 0 25px;
+}
+
+main .projects .card1 .project-footer .project-footer-logos {
+    display: flex;
+    align-items: center;
+}
+
+main .projects .card1 .project-footer img {
+    width: 25px;
+    height: 25px;
 }
 
 main .projects .card2 {
     font-size: 1rem;
-    background-color: slateblue;
+    line-height: 25px;
+    /*
+    background: linear-gradient(83deg, rgba(106,91,205,1) 0%, rgba(115,101,203,1) 100%);
     color: white;
+    */
+    background-color: gold;
+    color: rgb(20,20,20);
     position: absolute;
     top: 0;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 2px gold;
 }
 
-main .projects .card2:hover {
-    color: white;
-}
 
 main .skills {
     padding: 40px 10%;
-    position: relative;
-    height: 240px;
 }
 
-main .skills-container {
-    margin-bottom: 40px;
-}
+
 
 main .skills h2 {
     font-family: 'Poiret One', cursive;
@@ -287,10 +318,10 @@ main .skills p {
 
 main .skills-content, main .skills-other-content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    height: 150px;
 }
 
 main .skills h3 { 
@@ -352,13 +383,6 @@ main .skill-bar .skill-rate-25 {
     margin: 0 auto;
 }
 
-.skills-other-content, .skills-content {
-    position: absolute;
-    top: 0;
-    height: 150px;
-    width: 80%;
-    margin-top: 90px;
-}
 
 main .training  {
     margin-left: 10%;
@@ -447,3 +471,5 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+
