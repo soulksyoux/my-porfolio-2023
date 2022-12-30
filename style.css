@@ -228,9 +228,7 @@ main .projects .project-card:hover {
 
 }
 
-.hidden {
-    display: none !important;
-}
+
 
 main .projects .card {
     padding: 20px 20px;
@@ -244,13 +242,12 @@ main .projects .card {
 
 main .projects .card1 {
     display: flex;
-    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
 main .projects .card1 h3 {
     font-size: 1.4rem;
-    align-self: flex-end;
+    align-self: center;
     width: 100%;
     
 }
@@ -263,17 +260,25 @@ main .projects .card1 .project-footer {
     font-size: 0.9rem;
     font-weight: 700;
     color: rgb(252, 243, 127);
-    padding: 0 25px;
+
+}
+
+main .projects .card1 .project-date {
+    color: #c1baeb;
 }
 
 main .projects .card1 .project-footer .project-footer-logos {
     display: flex;
     align-items: center;
+    gap: 6px;
 }
 
 main .projects .card1 .project-footer img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    background: rgba(30, 30, 30, 0.7);
+    border-radius: 50%;
+    padding: 5px;
 }
 
 main .projects .card2 {
@@ -473,4 +478,6 @@ footer {
     justify-content: center;
 }
 
-
+.hidden {
+    display: none !important;
+}
