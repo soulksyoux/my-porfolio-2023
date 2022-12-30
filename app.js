@@ -33,3 +33,19 @@ btnToggleSkills.addEventListener("click", function(event){
 })
 
 
+const traningsBtns = document.querySelectorAll(".more-training-btn");
+traningsBtns.forEach(btn => {
+    btn.addEventListener("click", function(event) {
+        let id = this.id.slice(-1);
+        let strElement = "training-detail-" + id;
+        let element = document.getElementById(strElement);
+        element.classList.toggle("hidden");
+        if(this.innerHTML === "+") {
+            this.innerHTML = "-";
+        }else{
+            this.innerHTML = "+";
+        }
+    });
+});
+
+
