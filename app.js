@@ -39,11 +39,15 @@ traningsBtns.forEach(btn => {
         let id = this.id.slice(-1);
         let strElement = "training-detail-" + id;
         let element = document.getElementById(strElement);
-        element.classList.toggle("hidden");
+
         if(this.innerHTML === "+") {
             this.innerHTML = "-";
+            element.classList.toggle("hidden");
+            element.classList.toggle("show");
         }else{
             this.innerHTML = "+";
+            element.classList.toggle("hidden");
+            element.classList.toggle("show");
         }
     });
 });

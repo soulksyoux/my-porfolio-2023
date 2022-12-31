@@ -502,6 +502,22 @@ footer {
     display: none !important;
 }
 
+.show {
+    display: block;
+    animation: fade_in_show 0.5s
+}
+
+@keyframes fade_in_show {
+    0% {
+         opacity: 0;
+    }
+
+    100% {
+         opacity: 1;
+    }
+}
+
+
 @media screen and (max-width:1700px) {
     .banner .quote {
         font-size: 1.6em;
