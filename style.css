@@ -448,6 +448,12 @@ main .more-training-btn {
     transition: 0.1s ease-out;
 }
 
+main .more-training-btn > div {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+}
+
 main .more-training-btn:hover {
     background-color: rgb(255, 223, 40);
     color: rgb(20,20,20);
