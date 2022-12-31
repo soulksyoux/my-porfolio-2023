@@ -620,6 +620,11 @@ footer {
     header nav ul {
         gap: 0.9rem;
     }
+
+    .banner .photo img{
+        width: 300px;
+    }
+
 }
 
 @media screen and (max-width:650px) {
@@ -630,5 +635,9 @@ footer {
 
     header {
         padding: 60px 20px;
+    }
+
+    .banner .photo img{
+        width: 250px;
     }
 }
